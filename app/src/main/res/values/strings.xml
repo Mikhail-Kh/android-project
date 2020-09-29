@@ -10,5 +10,17 @@
     <string name="latvia">Latvia</string>
     <string name="denmark">Denmark</string>
     <string name="spain">Spain</string>
+    <string name="start">Старт</string>
+    <string name="competition">Соревнование по сбору урожая в Беларуси</string>
+    <string name="region">Область</string>
+    <string name="brest_region">Брестская область</string>
+    <string name="vitebsk_region">Витебская область</string>
+    <string name="grodno_region">Гродненская область</string>
+    <string name="vegetables">Овощи</string>
+    <string name="potatoes">Картофель</string>
+    <string name="cabbage">Капуcта</string>
+    <string name="beet">Свекла</string>
+    <string name="number_ton">Кол-во, тыс.тон</string>
+    <string name="champion">Победитель:</string>
 </resources>
 
