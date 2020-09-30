@@ -14,74 +14,118 @@ class Main6Activity : AppCompatActivity() {
         setContentView(R.layout.activity_main6)
 
         buttonStart.setOnClickListener {
-            var counter = 0
-            runBlocking {
 
-                launch {
-                    while (counter != 1) {
-                        delay(1000)
-                        textView24.text = counter.toString()
-                        counter++
-                    }
-                }
-                launch {
-                    while (counter != 2) {
-                        delay(1000)
-                        textView23.text = counter.toString()
-                        counter++
-                    }
-                }
-                launch {
-                    while (counter != 3) {
-                        delay(1000)
-                        textView22.text = counter.toString()
-                        counter++
-                    }
-                }
-                launch {
-                    while (counter != 4) {
-                        delay(1000)
-                        textView21.text = counter.toString()
-                        counter++
-                    }
-                }
-                launch {
-                    while (counter != 5) {
-                        delay(1000)
-                        textView20.text = counter.toString()
-                        counter++
-                    }
-                }
-                launch {
-                    while (counter != 6) {
-                        delay(1000)
-                        textView19.text = counter.toString()
-                        counter++
-                    }
-                }
-                launch {
-                    while (counter != 7) {
-                        delay(1000)
-                        textView18.text = counter.toString()
-                        counter++
-                    }
-                }
-                launch {
-                    while (counter != 8) {
-                        delay(1000)
-                        textView17.text = counter.toString()
-                        counter++
-                    }
-                }
-                launch {
-                    while (counter != 9) {
-                        delay(1000)
-                        textView16.text = counter.toString()
-                        counter++
-                    }
-                }
+            var flag = false
+            CoroutineScope(Dispatchers.IO).launch {
 
+                var counter1 = (1..10).random()
+                while (true) {
+                    withContext(Dispatchers.Main) {
+                        textView24.text = counter1.toString()
+                    }
+                    delay(1000)
+                    if (counter1 > 51) {
+                        flag = true
+                        break
+                    }
+                    counter1 += counter1
+                }
             }
+            /*if (flag) {
+                textView27.text = "$flag"
+            }*/
+
+
+            /*CoroutineScope(Dispatchers.IO).launch {
+                var counter2 = (1..10).random()
+                while (true) {
+                    withContext(Dispatchers.Main) {
+                        textView23.text = counter2.toString()
+                    }
+                    delay(1000)
+                    if (counter2 > 51) break
+                    counter2 += counter2
+                }
+            }
+            CoroutineScope(Dispatchers.IO).launch {
+                var counter3 = (1..10).random()
+                while (true) {
+                    withContext(Dispatchers.Main) {
+                        textView22.text = counter3.toString()
+                    }
+                    delay(1000)
+                    if (counter3 > 51) break
+                    counter3 += counter3
+                }
+            }
+            CoroutineScope(Dispatchers.IO).launch {
+                var counter4 = (1..10).random()
+                while (true) {
+                    withContext(Dispatchers.Main) {
+                        textView21.text = counter4.toString()
+                    }
+                    delay(1000)
+                    if (counter4 > 51) break
+                    counter4 += counter4
+                }
+            }
+            CoroutineScope(Dispatchers.IO).launch {
+                var counter5 = (1..10).random()
+                while (true) {
+                    withContext(Dispatchers.Main) {
+                        textView20.text = counter5.toString()
+                    }
+                    delay(1000)
+                    if (counter5 > 51) break
+                    counter5 += counter5
+                }
+            }
+            CoroutineScope(Dispatchers.IO).launch {
+                var counter6 = (1..10).random()
+                while (true) {
+                    withContext(Dispatchers.Main) {
+                        textView19.text = counter6.toString()
+                    }
+                    delay(1000)
+                    if (counter6 > 51) break
+                    counter6 += counter6
+                }
+            }
+            CoroutineScope(Dispatchers.IO).launch {
+                var counter7 = (1..10).random()
+                while (true) {
+                    withContext(Dispatchers.Main) {
+                        textView18.text = counter7.toString()
+                    }
+                    delay(1000)
+                    if (counter7 > 51) break
+                    counter7 += counter7
+                }
+            }
+            CoroutineScope(Dispatchers.IO).launch {
+                var counter8 = (1..10).random()
+                while (true) {
+                    withContext(Dispatchers.Main) {
+                        textView17.text = counter8.toString()
+                    }
+                    delay(1000)
+                    if (counter8 > 51) break
+                    counter8 += counter8
+                }
+            }
+            CoroutineScope(Dispatchers.IO).launch {
+                var counter9 = (1..10).random()
+                while (true) {
+                    withContext(Dispatchers.Main) {
+                        textView16.text = counter9.toString()
+                    }
+                    delay(1000)
+                    if (counter9 > 51) break
+                    counter9 += counter9
+                }
+            }*/
+
+
         }
     }
 }

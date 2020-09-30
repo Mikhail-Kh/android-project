@@ -322,7 +322,6 @@
         android:id="@+id/textView24"
         android:layout_width="130dp"
         android:layout_height="30dp"
-        android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="5dp"
         android:background="#F8F5EE"
