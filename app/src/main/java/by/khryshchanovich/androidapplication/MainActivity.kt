@@ -7,10 +7,13 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+<<<<<<< HEAD
     override fun onStart() {
         super.onStart()
     }
 
+=======
+>>>>>>> feature_load_picture
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
