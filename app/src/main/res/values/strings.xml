@@ -2,5 +2,13 @@
     <string name="app_name">AndroidApplication</string>
     <string name="load_image">Load Image</string>
     <string name="please_enter_image_url">Please enter image url</string>
+    <string name="flags">Flags</string>
+    <string name="animation">Animation</string>
+    <string name="austria">Austria</string>
+    <string name="armenia">Armenia</string>
+    <string name="belgium">Belgium</string>
+    <string name="latvia">Latvia</string>
+    <string name="denmark">Denmark</string>
+    <string name="spain">Spain</string>
 </resources>
 
