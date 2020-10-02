@@ -1,131 +1,52 @@
 package by.khryshchanovich.androidapplication
 
 import android.annotation.SuppressLint
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.annotation.RequiresApi
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import kotlinx.android.synthetic.main.activity_main6.*
-import kotlinx.coroutines.*
 
 class Main6Activity : AppCompatActivity() {
 
+    @RequiresApi(Build.VERSION_CODES.O)
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main6)
 
+        val competitionViewModel = ViewModelProvider(this).get(CompetitionViewModel::class.java)
+        competitionViewModel.counter1.observe(this, Observer { newCounter1 ->
+            textView24.text = newCounter1.toString()})
+        competitionViewModel.counter2.observe(this, Observer { newCounter2 ->
+            textView23.text = newCounter2.toString()})
+        competitionViewModel.counter3.observe(this, Observer { newCounter3 ->
+            textView22.text = newCounter3.toString()})
+        competitionViewModel.counter4.observe(this, Observer { newCounter4 ->
+            textView21.text = newCounter4.toString()})
+        competitionViewModel.counter5.observe(this, Observer { newCounter5 ->
+            textView20.text = newCounter5.toString()})
+        competitionViewModel.counter6.observe(this, Observer { newCounter6 ->
+            textView19.text = newCounter6.toString()})
+        competitionViewModel.counter7.observe(this, Observer { newCounter7 ->
+            textView18.text = newCounter7.toString()})
+        competitionViewModel.counter8.observe(this, Observer { newCounter8 ->
+            textView17.text = newCounter8.toString()})
+        competitionViewModel.counter9.observe(this, Observer { newCounter9 ->
+            textView16.text = newCounter9.toString()})
+        competitionViewModel.champion.observe(this, Observer {regionChampion ->
+            textView27.text = regionChampion.toString()})
+        competitionViewModel.colorBackground1.observe(this, Observer {regionColorBackground1 ->
+            textView9.setBackgroundColor(regionColorBackground1)})
+        competitionViewModel.colorBackground2.observe(this, Observer {regionColorBackground2 ->
+            textView.setBackgroundColor(regionColorBackground2)})
+        competitionViewModel.colorBackground3.observe(this, Observer {regionColorBackground3 ->
+            textView2.setBackgroundColor(regionColorBackground3)})
+
         buttonStart.setOnClickListener {
-
-            var flag = false
-            CoroutineScope(Dispatchers.IO).launch {
-
-                var counter1 = (1..10).random()
-                while (true) {
-                    withContext(Dispatchers.Main) {
-                        textView24.text = counter1.toString()
-                    }
-                    delay(1000)
-                    if (counter1 > 51) {
-                        flag = true
-                        break
-                    }
-                    counter1 += counter1
-                }
-            }
-            /*if (flag) {
-                textView27.text = "$flag"
-            }*/
-
-
-            /*CoroutineScope(Dispatchers.IO).launch {
-                var counter2 = (1..10).random()
-                while (true) {
-                    withContext(Dispatchers.Main) {
-                        textView23.text = counter2.toString()
-                    }
-                    delay(1000)
-                    if (counter2 > 51) break
-                    counter2 += counter2
-                }
-            }
-            CoroutineScope(Dispatchers.IO).launch {
-                var counter3 = (1..10).random()
-                while (true) {
-                    withContext(Dispatchers.Main) {
-                        textView22.text = counter3.toString()
-                    }
-                    delay(1000)
-                    if (counter3 > 51) break
-                    counter3 += counter3
-                }
-            }
-            CoroutineScope(Dispatchers.IO).launch {
-                var counter4 = (1..10).random()
-                while (true) {
-                    withContext(Dispatchers.Main) {
-                        textView21.text = counter4.toString()
-                    }
-                    delay(1000)
-                    if (counter4 > 51) break
-                    counter4 += counter4
-                }
-            }
-            CoroutineScope(Dispatchers.IO).launch {
-                var counter5 = (1..10).random()
-                while (true) {
-                    withContext(Dispatchers.Main) {
-                        textView20.text = counter5.toString()
-                    }
-                    delay(1000)
-                    if (counter5 > 51) break
-                    counter5 += counter5
-                }
-            }
-            CoroutineScope(Dispatchers.IO).launch {
-                var counter6 = (1..10).random()
-                while (true) {
-                    withContext(Dispatchers.Main) {
-                        textView19.text = counter6.toString()
-                    }
-                    delay(1000)
-                    if (counter6 > 51) break
-                    counter6 += counter6
-                }
-            }
-            CoroutineScope(Dispatchers.IO).launch {
-                var counter7 = (1..10).random()
-                while (true) {
-                    withContext(Dispatchers.Main) {
-                        textView18.text = counter7.toString()
-                    }
-                    delay(1000)
-                    if (counter7 > 51) break
-                    counter7 += counter7
-                }
-            }
-            CoroutineScope(Dispatchers.IO).launch {
-                var counter8 = (1..10).random()
-                while (true) {
-                    withContext(Dispatchers.Main) {
-                        textView17.text = counter8.toString()
-                    }
-                    delay(1000)
-                    if (counter8 > 51) break
-                    counter8 += counter8
-                }
-            }
-            CoroutineScope(Dispatchers.IO).launch {
-                var counter9 = (1..10).random()
-                while (true) {
-                    withContext(Dispatchers.Main) {
-                        textView16.text = counter9.toString()
-                    }
-                    delay(1000)
-                    if (counter9 > 51) break
-                    counter9 += counter9
-                }
-            }*/
-
-
+            competitionViewModel.startCompetition()
         }
     }
 }
