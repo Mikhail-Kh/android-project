@@ -22,5 +22,11 @@
     <string name="beet">Свекла</string>
     <string name="number_ton">Кол-во, тыс.тон</string>
     <string name="champion">Победитель:</string>
+    <string name="mother_s_day">Mother\'s day</string>
+    <string name="congratulate_on">Congratulate on</string>
+    <string name="congratulation_text">Поздравление</string>
+    <string name="mothers_day_text">с Днем Матери</string>
+    <string name="dear_mother_text">Дорогая Мама!</string>
+    <string name="congratulation_mother_text">Поздравляю тебя с праздником.</string>
+    <string name="wish_text">Желаю тебе добра, любви и здоровья!</string>
 </resources>
-
