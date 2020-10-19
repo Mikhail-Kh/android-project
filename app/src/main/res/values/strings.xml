@@ -10,5 +10,23 @@
     <string name="latvia">Latvia</string>
     <string name="denmark">Denmark</string>
     <string name="spain">Spain</string>
+    <string name="start">Старт</string>
+    <string name="competition">Соревнование по сбору урожая в Беларуси</string>
+    <string name="region">Область</string>
+    <string name="brest_region">Брестская область</string>
+    <string name="vitebsk_region">Витебская область</string>
+    <string name="grodno_region">Гродненская область</string>
+    <string name="vegetables">Овощи</string>
+    <string name="potatoes">Картофель</string>
+    <string name="cabbage">Капуcта</string>
+    <string name="beet">Свекла</string>
+    <string name="number_ton">Кол-во, тыс.тон</string>
+    <string name="champion">Победитель:</string>
+    <string name="mother_s_day">Mother\'s day</string>
+    <string name="congratulate_on">Congratulate on</string>
+    <string name="congratulation_text">Поздравление</string>
+    <string name="mothers_day_text">с Днем Матери</string>
+    <string name="dear_mother_text">Дорогая Мама!</string>
+    <string name="congratulation_mother_text">Поздравляю тебя с праздником.</string>
+    <string name="wish_text">Желаю тебе добра, любви и здоровья!</string>
 </resources>
-
