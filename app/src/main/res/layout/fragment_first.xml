@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFBF9"
+    android:orientation="vertical"
+    tools:context=".coffee_day.FragmentFirst">
+
+    <EditText
+        android:id="@+id/edit_kind_of_coffee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:background="#FFFFFF"
+        android:hint="@string/enter_kind_of_coffee" />
+
+    <EditText
+        android:id="@+id/edit_price_of_coffee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="#FFFFFF"
+        android:hint="@string/enter_price_of_coffee" />
+
+    <EditText
+        android:id="@+id/edit_url_of_coffee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="#FFFFFF"
+        android:hint="@string/enter_url_image_for_coffee" />
+
+    <Button
+        android:id="@+id/button_add_all_fields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginRight="15dp"
+        android:background="#D5C593"
+        android:text="@string/add"
+        android:textStyle="bold" />
+</LinearLayout>

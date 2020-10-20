@@ -3,6 +3,7 @@ package by.khryshchanovich.androidapplication
 import android.content.Intent  // подключаем класс Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import by.khryshchanovich.androidapplication.coffee_day.MainCoffeeActivity
 import by.khryshchanovich.androidapplication.mothers_day.MainStartActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -33,6 +34,10 @@ class MainActivity : AppCompatActivity() {
 
         button_mothers_day.setOnClickListener {
             startActivity(Intent(this, MainStartActivity::class.java))
+        }
+
+        button_coffee_day.setOnClickListener {
+            startActivity(Intent(this, MainCoffeeActivity::class.java))
         }
     }
 }
