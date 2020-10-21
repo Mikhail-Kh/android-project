@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentStart">
+
+    <fragment
+        android:id="@+id/fragmentStart"
+        android:name="by.khryshchanovich.androidapplication.coffee_day.FragmentStart"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_fragmentStart_to_fragmentFirst"
+            app:destination="@id/fragmentFirst" />
+        <action
+            android:id="@+id/action_fragmentStart_to_fragmentSecond"
+            app:destination="@id/fragmentSecond" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFirst"
+        android:name="by.khryshchanovich.androidapplication.coffee_day.FragmentFirst"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" />
+    <fragment
+        android:id="@+id/fragmentSecond"
+        android:name="by.khryshchanovich.androidapplication.coffee_day.FragmentSecond"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" />
+</navigation>
