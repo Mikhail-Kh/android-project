@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".coffee_day.MainCoffeeActivity"></activity>
+        <activity android:name=".user_registration.MainRegistrationActivity"></activity>
+        <activity android:name=".user_registration.WelcomeActivity" />
+        <activity android:name=".coffee_day.MainCoffeeActivity" />
         <activity android:name=".mothers_day.MainCongratulationActivity" />
         <activity android:name=".mothers_day.MainStartActivity" />
         <activity android:name=".Main6Activity" />

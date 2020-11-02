@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import by.khryshchanovich.androidapplication.coffee_day.MainCoffeeActivity
 import by.khryshchanovich.androidapplication.mothers_day.MainStartActivity
+import by.khryshchanovich.androidapplication.user_registration.MainRegistrationActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -41,6 +42,10 @@ class MainActivity : AppCompatActivity() {
 
         button_coffee_day.setOnClickListener {
             startActivity(Intent(this, MainCoffeeActivity::class.java))
+        }
+
+        button_user_registration.setOnClickListener {
+            startActivity(Intent(this, MainRegistrationActivity::class.java))
         }
     }
 }

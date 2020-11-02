@@ -46,4 +46,10 @@
     <string name="price_text_view">Цена, руб.</string>
     <string name="coffeename">coffeeName</string>
     <string name="coffeeprice">coffeePrice</string>
+    <string name="registration">Registration</string>
+    <string name="username_string">Username</string>
+    <string name="register_text">Register</string>
+    <string name="error">Error</string>
+    <string name="password_is_8_characters">Password must not be less than 8 characters</string>
+    <string name="you_are_registered">You are registered</string>
 </resources>
