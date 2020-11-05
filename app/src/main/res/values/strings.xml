@@ -52,4 +52,16 @@
     <string name="error">Error</string>
     <string name="password_is_8_characters">Password must not be less than 8 characters</string>
     <string name="you_are_registered">You are registered</string>
+    <string name="book_database">Book database</string>
+    <string name="book_database_text_view">Book database</string>
+    <string name="add_button">Add</string>
+    <string name="see_button">See</string>
+    <string name="book_picture_image_view">Book picture</string>
+    <string name="author_edit_text">author</string>
+    <string name="title_edit_text">title</string>
+    <string name="year_edit_text">year</string>
+    <string name="author_text_view">Author</string>
+    <string name="title_text_view">Title</string>
+    <string name="year_text_view">Year</string>
+    <string name="search_edit_text">search</string>
 </resources>

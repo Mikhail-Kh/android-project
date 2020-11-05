@@ -74,4 +74,20 @@
         app:layout_constraintLeft_toRightOf="@+id/button_coffee_day"
         app:layout_constraintTop_toBottomOf="@id/button3"
         app:layout_constraintVertical_bias="0.157" />
+
+    <Button
+        android:id="@+id/database_button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:background="#4CAF50"
+        android:text="@string/book_database"
+        android:textSize="12sp"
+        app:backgroundTint="#4CAF50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_mothers_day"
+        app:layout_constraintVertical_bias="0.157" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
