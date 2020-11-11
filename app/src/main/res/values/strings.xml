@@ -64,4 +64,10 @@
     <string name="title_text_view">Title</string>
     <string name="year_text_view">Year</string>
     <string name="search_edit_text">search</string>
+    <string name="networking_button">Networking</string>
+    <string name="cryptocurrencies_text_view">Cryptocurrencies</string>
+    <string name="name_string_text_view">Name</string>
+    <string name="price_string_text_view">Price</string>
+    <string name="percent_change_1h_string_text_view">Percent change 1h</string>
+    <string name="symbol_string_text_view">Symbol</string>
 </resources>
