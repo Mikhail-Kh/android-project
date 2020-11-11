@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/book_picture2"
+    tools:context=".book_database.ShowBookActivity">
+
+    <EditText
+        android:id="@+id/bookSearch"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="15dp"
+        android:background="#F5F9F9"
+        android:drawableStart="@drawable/search_picture"
+        android:hint="@string/search_edit_text"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawableLeft="@drawable/search_picture" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bookRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookSearch" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

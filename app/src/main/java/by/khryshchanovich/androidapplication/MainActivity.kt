@@ -3,6 +3,8 @@ package by.khryshchanovich.androidapplication
 import android.content.Intent  // подключаем класс Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import by.khryshchanovich.androidapplication.book_database.MainDatabaseActivity
 import by.khryshchanovich.androidapplication.coffee_day.MainCoffeeActivity
 import by.khryshchanovich.androidapplication.mothers_day.MainStartActivity
 import by.khryshchanovich.androidapplication.user_registration.MainRegistrationActivity
@@ -46,6 +48,11 @@ class MainActivity : AppCompatActivity() {
 
         button_user_registration.setOnClickListener {
             startActivity(Intent(this, MainRegistrationActivity::class.java))
+        }
+
+        val databaseClickButton = findViewById<Button>(R.id.database_button)
+        databaseClickButton.setOnClickListener {
+            startActivity(Intent(this, MainDatabaseActivity::class.java))
         }
     }
 }
