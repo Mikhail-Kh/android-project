@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import by.khryshchanovich.androidapplication.book_database.MainDatabaseActivity
 import by.khryshchanovich.androidapplication.coffee_day.MainCoffeeActivity
+import by.khryshchanovich.androidapplication.cryptocurrencies.MainNetworkingActivity
 import by.khryshchanovich.androidapplication.mothers_day.MainStartActivity
 import by.khryshchanovich.androidapplication.user_registration.MainRegistrationActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -53,6 +54,11 @@ class MainActivity : AppCompatActivity() {
         val databaseClickButton = findViewById<Button>(R.id.database_button)
         databaseClickButton.setOnClickListener {
             startActivity(Intent(this, MainDatabaseActivity::class.java))
+        }
+
+        val networkingButton = findViewById<Button>(R.id.networking_button)
+        networkingButton.setOnClickListener {
+            startActivity(Intent(this, MainNetworkingActivity::class.java))
         }
     }
 }
