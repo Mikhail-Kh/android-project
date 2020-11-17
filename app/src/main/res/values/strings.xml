@@ -70,4 +70,8 @@
     <string name="price_string_text_view">Price</string>
     <string name="percent_change_1h_string_text_view">Percent change 1h</string>
     <string name="symbol_string_text_view">Symbol</string>
+    <string name="light_sensor_button">Light sensor</string>
+    <string name="value_string_tv">Value</string>
+    <string name="name_string_tv">Name</string>
+    <string name="light_sensor_text_view">Light sensor</string>
 </resources>
