@@ -41,7 +41,7 @@ class MainSensorActivity : AppCompatActivity(), SensorEventListener {
 
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onSensorChanged(event: SensorEvent?) {
-        if (event!!.sensor.type == Sensor.TYPE_LIGHT) {
+        if (event?.sensor?.type == Sensor.TYPE_LIGHT) {
             getLightSensor(event)
         }
     }
@@ -50,7 +50,7 @@ class MainSensorActivity : AppCompatActivity(), SensorEventListener {
     fun getLightSensor(event: SensorEvent?) {
         sensor_recycler.layoutManager = LinearLayoutManager(this)
         val light = ArrayList<LightSensor>()
-        light.add(LightSensor("Light level, lx ", event!!.values[0].toString()))
+        light.add(LightSensor("Light level, lx ", event?.values?.get(0).toString()))
         light.add(LightSensor("Name ", sensorLight.name))
         light.add(LightSensor("Vendor ", sensorLight.vendor))
         light.add(LightSensor("Version", sensorLight.version.toString()))
