@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".cryptocurrencies.MainNetworkingActivity"></activity>
+        <activity android:name=".light_sensor.MainSensorActivity"></activity>
+        <activity android:name=".cryptocurrencies.MainNetworkingActivity" />
         <activity android:name=".book_database.ShowBookActivity" />
         <activity android:name=".book_database.MainDatabaseActivity" />
         <activity android:name=".user_registration.MainRegistrationActivity" />
