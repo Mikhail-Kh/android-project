@@ -74,4 +74,5 @@
     <string name="value_string_tv">Value</string>
     <string name="name_string_tv">Name</string>
     <string name="light_sensor_text_view">Light sensor</string>
+    <string name="fibonacci_numbers">Fibonacci numbers</string>
 </resources>

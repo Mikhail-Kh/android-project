@@ -1,22 +1,19 @@
 package by.khryshchanovich.androidapplication
 
-import android.content.Intent  // подключаем класс Intent
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import by.khryshchanovich.androidapplication.book_database.MainDatabaseActivity
 import by.khryshchanovich.androidapplication.coffee_day.MainCoffeeActivity
 import by.khryshchanovich.androidapplication.cryptocurrencies.MainNetworkingActivity
+import by.khryshchanovich.androidapplication.fibonacci_numbers.MainFibonacciActivity
 import by.khryshchanovich.androidapplication.light_sensor.MainSensorActivity
 import by.khryshchanovich.androidapplication.mothers_day.MainStartActivity
 import by.khryshchanovich.androidapplication.user_registration.MainRegistrationActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-
-    override fun onStart() {
-        super.onStart()
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -62,6 +59,11 @@ class MainActivity : AppCompatActivity() {
         val lightSensorButton = findViewById<Button>(R.id.sensor_button)
         lightSensorButton.setOnClickListener {
             startActivity(Intent(this, MainSensorActivity::class.java))
+        }
+
+        val fibonacciNumbersButton = findViewById<Button>(R.id.fibonacci_button)
+        fibonacciNumbersButton.setOnClickListener {
+            startActivity(Intent(this, MainFibonacciActivity::class.java))
         }
     }
 }

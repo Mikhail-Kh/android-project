@@ -1,123 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="100dp"
-        android:layout_height="200dp"
-        android:text="Button 1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="100dp"
-        android:layout_height="200dp"
-        android:text="Button 2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:text="Button 1"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="100dp"
-        android:layout_height="200dp"
-        android:text="Button 3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button2"
-        app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:text="Button 2"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button_mothers_day"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginLeft="13dp"
-        android:background="#F8F1F1"
-        android:text="@string/mother_s_day"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.157" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:text="Button 3"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button2"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button_coffee_day"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="17dp"
-        android:layout_marginLeft="17dp"
-        android:background="#B57839"
-        android:text="@string/coffee_day"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/button_mothers_day"
-        app:layout_constraintTop_toBottomOf="@id/button2"
-        app:layout_constraintVertical_bias="0.157" />
+        <Button
+            android:id="@+id/button_mothers_day"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:background="#FFBABA"
+            android:text="@string/mother_s_day"
+            android:textSize="12sp"
+            app:backgroundTint="#FFBABA"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            app:layout_constraintVertical_bias="0.157" />
 
-    <Button
-        android:id="@+id/button_user_registration"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="17dp"
-        android:background="#48D5C7"
-        android:text="@string/registration"
-        app:backgroundTint="#48D5C7"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/button_coffee_day"
-        app:layout_constraintTop_toBottomOf="@id/button3"
-        app:layout_constraintVertical_bias="0.157" />
+        <Button
+            android:id="@+id/button_coffee_day"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="17dp"
+            android:background="#B57839"
+            android:text="@string/coffee_day"
+            android:textSize="12sp"
+            app:backgroundTint="#B57839"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/button_mothers_day"
+            app:layout_constraintTop_toBottomOf="@id/button2"
+            app:layout_constraintVertical_bias="0.157" />
 
-    <Button
-        android:id="@+id/database_button"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginLeft="13dp"
-        android:background="#4CAF50"
-        android:text="@string/book_database"
-        android:textSize="12sp"
-        app:backgroundTint="#4CAF50"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_mothers_day"
-        app:layout_constraintVertical_bias="0.157" />
+        <Button
+            android:id="@+id/button_user_registration"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="17dp"
+            android:background="#48D5C7"
+            android:text="@string/registration"
+            android:textSize="12sp"
+            app:backgroundTint="#48D5C7"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/button_coffee_day"
+            app:layout_constraintTop_toBottomOf="@id/button3"
+            app:layout_constraintVertical_bias="0.157" />
 
-    <Button
-        android:id="@+id/networking_button"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="17dp"
-        android:layout_marginLeft="17dp"
-        android:background="#2363A3"
-        android:text="@string/networking_button"
-        android:textSize="9sp"
-        app:backgroundTint="#2363A3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/database_button"
-        app:layout_constraintTop_toBottomOf="@id/button_coffee_day"
-        app:layout_constraintVertical_bias="0.157" />
+        <Button
+            android:id="@+id/database_button"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:background="#4CAF50"
+            android:text="@string/book_database"
+            android:textSize="12sp"
+            app:backgroundTint="#4CAF50"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_mothers_day"
+            app:layout_constraintVertical_bias="0.157" />
 
-    <Button
-        android:id="@+id/sensor_button"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="17dp"
-        android:layout_marginLeft="17dp"
-        android:background="#FFEB3B"
-        android:text="@string/light_sensor_button"
-        android:textSize="12sp"
-        app:backgroundTint="#FFEB3B"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/networking_button"
-        app:layout_constraintTop_toBottomOf="@id/button_user_registration"
-        app:layout_constraintVertical_bias="0.157" />
+        <Button
+            android:id="@+id/networking_button"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="17dp"
+            android:background="#2363A3"
+            android:text="@string/networking_button"
+            android:textSize="9sp"
+            app:backgroundTint="#2363A3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/database_button"
+            app:layout_constraintTop_toBottomOf="@id/button_coffee_day"
+            app:layout_constraintVertical_bias="0.157" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/sensor_button"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="17dp"
+            android:background="#FFEB3B"
+            android:text="@string/light_sensor_button"
+            android:textSize="12sp"
+            app:backgroundTint="#FFEB3B"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/networking_button"
+            app:layout_constraintTop_toBottomOf="@id/button_user_registration"
+            app:layout_constraintVertical_bias="0.157" />
+
+        <Button
+            android:id="@+id/fibonacci_button"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="13dp"
+            android:background="#69F5B8"
+            android:text="@string/fibonacci_numbers"
+            android:textSize="11sp"
+            app:backgroundTint="#69F5B8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/database_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
