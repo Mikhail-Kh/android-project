@@ -79,4 +79,14 @@
     <string name="timer_text_view">Timer</string>
     <string name="stop_button">Stop</string>
     <string name="start_button">Start</string>
+    <string name="appwidget_text">Weather Widget</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+    <string name="city_text_view">City</string>
+    <string name="condition_text_view">Condition</string>
+    <string name="temperature_text_view">T</string>
+    <string name="time_text_view">Time</string>
+    <string name="weather_widget_button">Weather widget</string>
+    <string name="open_the_home_screen_text_view">Open the home screen</string>
+    <string name="the_weather_widget_text_view">The weather widget</string>
 </resources>
