@@ -8,7 +8,6 @@ import android.content.Intent
 import android.os.Build
 import android.view.View
 import android.widget.RemoteViews
-import android.widget.Toast
 import androidx.annotation.RequiresApi
 import by.khryshchanovich.androidapplication.R
 import by.khryshchanovich.androidapplication.weather_widget.MainWidgetActivity
