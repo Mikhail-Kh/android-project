@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/covidInfo_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/covid_info_text_view"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/country_text_view"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/flagUrl_text_view"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/covidInfo_text_view" />
+
+    <TextView
+        android:id="@+id/country_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/country_text_view"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/date_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_text_view"
+        android:layout_marginTop="5dp"
+        app:layout_constraintLeft_toRightOf="@+id/flagUrl_text_view"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/covidInfo_text_view" />
+
+    <TextView
+        android:id="@+id/totalConfirmed_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/total_confirmed_text_view"
+        app:layout_constraintLeft_toRightOf="@+id/flagUrl_text_view"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_text_view" />
+
+    <TextView
+        android:id="@+id/totalDeaths_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/total_deaths_text_view"
+        app:layout_constraintLeft_toRightOf="@+id/flagUrl_text_view"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalConfirmed_text_view" />
+
+    <TextView
+        android:id="@+id/totalRecovered_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/total_recovered_text_view"
+        app:layout_constraintLeft_toRightOf="@+id/flagUrl_text_view"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalDeaths_text_view" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginBottom="8dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalRecovered_text_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
