@@ -12,6 +12,7 @@ import by.khryshchanovich.androidapplication.light_sensor.MainSensorActivity
 import by.khryshchanovich.androidapplication.mothers_day.MainStartActivity
 import by.khryshchanovich.androidapplication.notification.MainNotificationActivity
 import by.khryshchanovich.androidapplication.user_registration.MainRegistrationActivity
+import by.khryshchanovich.androidapplication.weather_widget.MainWidgetActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -70,6 +71,11 @@ class MainActivity : AppCompatActivity() {
         val notificationButton = findViewById<Button>(R.id.notification_button)
         notificationButton.setOnClickListener {
             startActivity(Intent(this, MainNotificationActivity::class.java))
+        }
+
+        val widgetButton = findViewById<Button>(R.id.widget_button)
+        widgetButton.setOnClickListener {
+            startActivity(Intent(this, MainWidgetActivity::class.java))
         }
     }
 }
