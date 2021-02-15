@@ -10,6 +10,7 @@ import by.khryshchanovich.androidapplication.cryptocurrencies.MainNetworkingActi
 import by.khryshchanovich.androidapplication.fibonacci_numbers.MainFibonacciActivity
 import by.khryshchanovich.androidapplication.light_sensor.MainSensorActivity
 import by.khryshchanovich.androidapplication.mothers_day.MainStartActivity
+import by.khryshchanovich.androidapplication.notification.MainNotificationActivity
 import by.khryshchanovich.androidapplication.user_registration.MainRegistrationActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -64,6 +65,11 @@ class MainActivity : AppCompatActivity() {
         val fibonacciNumbersButton = findViewById<Button>(R.id.fibonacci_button)
         fibonacciNumbersButton.setOnClickListener {
             startActivity(Intent(this, MainFibonacciActivity::class.java))
+        }
+
+        val notificationButton = findViewById<Button>(R.id.notification_button)
+        notificationButton.setOnClickListener {
+            startActivity(Intent(this, MainNotificationActivity::class.java))
         }
     }
 }
