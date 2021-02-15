@@ -89,4 +89,11 @@
     <string name="weather_widget_button">Weather widget</string>
     <string name="open_the_home_screen_text_view">Open the home screen</string>
     <string name="the_weather_widget_text_view">The weather widget</string>
+    <string name="covid_info_button">Covid info</string>
+    <string name="covid_info_text_view">Covid Info</string>
+    <string name="country_text_view">Country</string>
+    <string name="total_confirmed_text_view">Total Confirmed</string>
+    <string name="total_deaths_text_view">Total Deaths</string>
+    <string name="total_recovered_text_view">Total Recovered</string>
+    <string name="date_text_view">Date</string>
 </resources>

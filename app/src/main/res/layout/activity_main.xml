@@ -179,5 +179,20 @@
             app:layout_constraintLeft_toRightOf="@+id/notification_button"
             app:layout_constraintTop_toBottomOf="@id/sensor_button" />
 
+        <Button
+            android:id="@+id/covid_button"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="13dp"
+            android:background="#F44336"
+            android:text="@string/covid_info_button"
+            android:textSize="12sp"
+            app:backgroundTint="#F44336"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fibonacci_button" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

@@ -11,6 +11,7 @@ import by.khryshchanovich.androidapplication.fibonacci_numbers.MainFibonacciActi
 import by.khryshchanovich.androidapplication.light_sensor.MainSensorActivity
 import by.khryshchanovich.androidapplication.mothers_day.MainStartActivity
 import by.khryshchanovich.androidapplication.notification.MainNotificationActivity
+import by.khryshchanovich.androidapplication.rxjava.MainCovidActivity
 import by.khryshchanovich.androidapplication.user_registration.MainRegistrationActivity
 import by.khryshchanovich.androidapplication.weather_widget.MainWidgetActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -76,6 +77,11 @@ class MainActivity : AppCompatActivity() {
         val widgetButton = findViewById<Button>(R.id.widget_button)
         widgetButton.setOnClickListener {
             startActivity(Intent(this, MainWidgetActivity::class.java))
+        }
+
+        val covidButton = findViewById<Button>(R.id.covid_button)
+        covidButton.setOnClickListener {
+            startActivity(Intent(this, MainCovidActivity::class.java))
         }
     }
 }
